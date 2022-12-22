@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- styles css -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Home | Comfy</title>
+</head>
+
+<body>
+  <!-- -------- navbar------------ -->
+  <div class="navbar">
+    <div class="nav-center">
+      <button class="menu-btn">
+        <i class="fas fa-bars icon"></i>
+      </button>
+      <ul class="nav-links-container">
+        <li> <a class="nav-link" href="index.html">home</a></li>
+        <li> <a class="nav-link" href="products.html">products</a></li>
+        <li> <a class="nav-link" href="about.html">about</a></li>
+      </ul>
+      <img src="./images/logo-white.svg" class="comfy-logo" alt="">
+
+      <article class="cart">
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart cart-icon icon"></i>
+          <span class="cart-counts"> 0 </span>
+
+        </button>
+      </article>
+
+    </div>
+  </div>
+  <!-----------------sidebar ------- -->
+
+  <div class="sidebar">
+    <button class="close-btn">
+      <i class="fas fa-times icon"></i>
+    </button>
+    <ul class="sidebar-links-container">
+      <li>
+        <a href="index.html">
+          <i class="fas fa-home icon"> </i> home
+        </a>
+      </li>
+      <li>
+        <a href="products.html">
+          <i class="fas fa-couch icon"></i>products
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <i class="fas fa-file-alt icon"></i>about
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!---------- hero-------------- -->
+  <div class="hero">
+    <section class="hero-center">
+      <h1 class="hero-title">rest,relax,unwind</h1>
+      <p class="hero-text">embrace your choices-we do</p>
+      <button class="btn hero-btn">show now</button>
+    </section>
+  </div>
+  <!------------ Featured ------ -->
+  <div class="featured">
+    <h1 class="featured-title"><span> /</span> Featured</h1>
+    <div class="products-center">
+      <!-- item -->
+      <div class="product" id="">
+        <section class="product-image-container">
+          <!-- image container -->
+          <img class="product-img" src="" alt="product-item">
+          <a class="product-link" href="./product.html">
+            <i class="fas fa-search icon"></i>
+          </a>
+          <a class="cart-link" href="./src/cart/addToCartDOM.js">
+            <i class="fas fa-shopping-cart icon"></i>
+          </a>
+        </section>
+        <!-- item-info -->
+        <h5 class="item-name">xyz</h5>
+        <h3 class="item-price">$9.99</h3>
+      </div>
+    </div>
+    <a href="./products.html">
+      <p class="btn btn-all-products"> all products</p>
+    </a>
+  </div>
+
+  <!-- =========cart============== -->
+
+  <div class="cart-items">
+    <h3>cart items </h3>
+    <div class="cart-items-container">
+      <article class="cart-item">
+        <h4 class="cart-item-name">name</h4>
+        <div data-id="" class="update-item-icons">
+          <i class="fas fa-chevron-up"></i>
+          <span class="quantity">0</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </article>
+    </div>
+    <h4 class="total-price">total price: $ 200</h4>
+    <h4 class="total-count">total count:10</h4>
+  </div>
+
+
+
+
+
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>

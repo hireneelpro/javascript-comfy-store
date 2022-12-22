@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single Product</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <!-- styles css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- -------- navbar------------ -->
+  <div class="navbar">
+    <div class="nav-center">
+      <button class="menu-btn">
+        <i class="fas fa-bars icon"></i>
+      </button>
+      <ul class="nav-links-container">
+        <li> <a class="nav-link" href="index.html">home</a></li>
+        <li> <a class="nav-link" href="products.html">products</a></li>
+        <li> <a class="nav-link" href="about.html">about</a></li>
+      </ul>
+      <img src="./images/logo-white.svg" class="comfy-logo" alt="">
+      <article class="cart">
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart cart-icon icon"></i>
+          <span class="cart-counts"> 0 </span>
+
+        </button>
+      </article>
+    </div>
+  </div>
+  <!-----------------sidebar ------- -->
+
+  <div class="sidebar">
+    <button class="close-btn">
+      <i class="fas fa-times icon"></i>
+    </button>
+    <ul class="sidebar-links-container">
+      <li>
+        <a href="index.html">
+          <i class="fas fa-home icon"> </i> home
+        </a>
+      </li>
+      <li>
+        <a href="products.html">
+          <i class="fas fa-couch icon"></i>products
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <i class="fas fa-file-alt icon"></i>about
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- ------- product-page --------- -->
+  <div class="product">
+    <h2 class="page-title">home/
+      <span class="page-name">high-back Bench</span>
+    </h2>
+    <div class="product-center">
+      <img src="" class="product-image" alt="product-image">
+      <div class="product-info">
+        <h2 class="product-name">xyz</h2>
+        <h3 class="product-price">$</h3>
+        <div class="color-container">
+          <span class="color"></span>
+          <span class="color"></span>
+        </div>
+        <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, beatae
+          cupiditate dicta exercitationem error quia deleniti accusamus doloremque distinctio fuga, explicabo sunt
+          officia quis? Maiores, molestias. Fugiat odio molestias ratione, quia in natus nisi sunt quaerat laborum non
+          repudiandae reiciendis accusantium consequuntur asperiores, cupiditate vero! Consequuntur natus molestiae
+          voluptatibus fuga!</p>
+        <button class="btn add-to-cart-btn ">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- =========cart============== -->
+  
+  <div class="cart-items">
+    <h3>cart items </h3>
+    <div class="cart-items-container">
+      <article class="cart-item">
+        <h4 class="cart-item-name">name</h4>
+        <div data-id="" class="update-item-icons">
+          <i class="fas fa-chevron-up"></i>
+          <span class="quantity">0</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </article>
+    </div>
+    <h4 class="total-price">total price: $ 200</h4>
+    <h4 class="total-count">total count:10</h4>
+  </div>
+
+
+
+
+  <script type="module" src="./src/pages/product.js"></script>
+</body>
+
+</html>
