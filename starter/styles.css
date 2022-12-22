@@ -151,7 +151,7 @@ p {
 }
 .btn:hover {
   background: var(--clr-primary-7);
-  color: var(--clr-black);
+  color: var(--clr-white);
 }
 /* ========== navbar========= */
 .nav-center {
@@ -166,7 +166,7 @@ p {
 .nav-links-container {
   display: none;
 }
-.nav-link:hover{
+.nav-link:hover {
   color: var(--clr-grey-4);
 }
 .icon {
@@ -178,7 +178,6 @@ p {
   border-radius: 35%;
   background-color: var(--clr-primary-5);
   color: var(--clr-white);
-  
 }
 .menu-btn:hover {
   cursor: pointer;
@@ -203,7 +202,7 @@ p {
   top: 0;
   transform: translate(50%, -50%);
 }
-.cart-icon{
+.cart-icon {
   position: absolute;
   top: 0;
 }
@@ -211,9 +210,8 @@ p {
   border: none;
   background-color: transparent;
 }
-.cart-btn:hover{
+.cart-btn:hover {
   cursor: pointer;
-
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -224,7 +222,7 @@ p {
     margin-left: 3rem;
   }
   .nav-link {
-    color: var(--clr-grey-9);
+    color: rgb(43, 43, 150);
     text-transform: capitalize;
     padding: 0 2rem;
     font-size: 1.4rem;
@@ -276,59 +274,50 @@ p {
   color: var(--clr-primary-6);
 }
 /* ============== cart ============= */
-.cart-items{
+.cart-items {
   position: absolute;
   top: 5rem;
   right: 1rem;
   background-color: var(--clr-grey-9);
   transform: translateX(120%);
   transition: var(--transition);
-  
 }
-.open-cart-items{
+.open-cart-items {
   transform: translateX(0%);
 }
-.cart-items-container{
+.cart-items-container {
   width: 250px;
   height: 380px;
   overflow: scroll;
-
 }
-.cart-items h3, h4{
+.cart-items h3,
+h4 {
   font-family: "Kaushan Script", cursive;
   text-align: center;
   padding: 0.5rem 0;
-
 }
-.cart-item{
-  padding: 5px ;
+.cart-item {
+  padding: 5px;
   display: flex;
   justify-content: space-between;
-  border-radius:var(--radius) ;
+  border-radius: var(--radius);
   background-color: white;
   align-items: center;
   margin: 8px;
 }
-.cart-item-name{
+.cart-item-name {
   margin-bottom: 0;
 }
-.update-item-icons{
+.update-item-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
-.total-price,total-counts{
-
+.total-price,
+.total-count {
+  color: blue;
 }
-
-
-
-
-
-
-
-
 
 /* ==========  hero============= */
 .hero {
@@ -349,14 +338,17 @@ p {
   font-size: 1rem;
   padding: 1rem 0;
   text-transform: capitalize;
-  color: var(--clr-white);
+  color: rgb(39, 39, 134);
   letter-spacing: 1px;
 }
 .hero-btn {
   background-color: white;
   color: var(--clr-white);
+  color: rgb(39, 39, 134);
+
   font-weight: 600;
-  border: 2px solid var(--clr-white);
+  border: 2px solid rgb(39, 39, 134);
+
   background-color: transparent;
 }
 /* ============ featured products======== */
@@ -397,14 +389,23 @@ p {
   margin: 1rem 2rem;
   height: 1.6rem;
   width: 12rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   border: 1px solid var(--clr-grey-9);
+}
+/* .search:focus{
+  border: 0.2px solid red;
+} */
+.search-types{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .company-container {
   padding: 2rem;
 }
 .company-name {
   font-size: 1rem;
+  padding:0 1rem;
   text-transform: capitalize;
   color: var(--clr-grey-4);
 }
@@ -412,7 +413,7 @@ p {
   box-shadow: var(--dark-shadow);
 }
 .price-bar-container {
-  padding: 0 2rem;
+  padding:  2rem;
 }
 .price {
   font-weight: 600;
@@ -438,7 +439,6 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    
   }
 }
 @media screen and (min-width: 900px) {
@@ -501,37 +501,36 @@ p {
 }
 
 /* ===================== single product page ================= */
-.product{
-padding: 2rem 0;
+.product {
+  padding: 2rem 0;
 }
-.product-image{
+.product-image {
   width: 50%;
   display: block;
   margin: 2rem auto;
 }
-.product-text{
+.product-text {
   width: 70%;
   text-align: justify;
   margin: 0 auto;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.add-to-cart-btn{
+.add-to-cart-btn {
   display: block;
-margin: 2rem auto;
+  margin: 2rem auto;
 }
-.color-container{
-width: 15rem;
-height: 3rem;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-
+.color-container {
+  width: 15rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-.color{
+.color {
   display: inline-block;
-  width:1.7rem;
+  width: 1.7rem;
   height: 1.7rem;
   border-radius: 50%;
-  margin:0 1rem;
-  border:1px solid ;
+  margin: 0 1rem;
+  border: 1px solid;
 }

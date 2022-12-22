@@ -19,10 +19,16 @@ window.addEventListener("DOMContentLoaded", async () => {
   updateCartCount(cartItems)
 
   const productID = window.location.search;
-
+  productPage.innerHTML = `<h2 style = "text-align:center " > Loading.... </h2>`
   const productData = await fetchProducts(`${singleProductUrl}${productID}`);
-  const id = productData.id;
+  // try {
+    
+  // } catch (error) {
+  //   new Error(`there is some problem error:${error} `)
+  //   productPage.innerHTML = `there is some error:${error}`
+  // }
   
+  const id = productData.id;
   const productName = productData.fields.name
   const productColors = productData.fields.colors
   const productPrice = productData.fields.price / 100

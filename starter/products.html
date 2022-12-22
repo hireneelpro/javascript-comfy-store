@@ -65,23 +65,27 @@
     <div class="page-title">
       <h2>home/products</h2>
     </div>
-    <!-- search -->
-    <input type="text" class="search" placeholder="search">
-    <!-- company -->
-    <ul class="company-container">
-      <li class="all company-name" data-id="all">all</li>
-      <li class="ikea company-name" data-id="ikea">ikea</li>
-      <li class="marcos company-name" data-id="marcos">marcos</li>
-      <li class=" company-name" data-id="caressa">caressa</li>
-      <li class="liddy company-name" data-id="liddy">liddy</li>
-    </ul>
-    <!-- price bar -->
-    <div class="price-bar-container">
-      <h3 class="price">price</h3>
-      <div class="price-bar"></div>
-      <p class="value">$80</p>
+
+    <div class="search-types">
+
+      <!-- search -->
+      <input type="text" class="search" placeholder="search">
+      <!-- company -->
+      <ul class="company-container">
+        <li class="all company-name" data-id="all">all</li>
+        <li class="ikea company-name" data-id="ikea">ikea</li>
+        <li class="marcos company-name" data-id="marcos">marcos</li>
+        <li class=" company-name" data-id="caressa">caressa</li>
+        <li class="liddy company-name" data-id="liddy">liddy</li>
+      </ul>
+      <!-- price bar -->
+      <div class="price-bar-container">
+        <h3 class="price">filter by price</h3>
+        <input type="range" name="price-filter" class="price-filter" min="0" max="80" value="80" step="5">
+        <label for="price-filter" class="value">$80</label>
+      </div>
     </div>
-    <!-- all-product-center -->
+      <!-- all-product-center -->
     <div class="products-center">
       <!-- item -->
       <!-- <div class="product" id=""> -->

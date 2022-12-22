@@ -7,10 +7,6 @@ import {
   getElement,
 } from "../utils.js";
 import { setupCart } from "./toggleCart.js";
-// import { openCart } from './toggleCart.js';
-// import { findProduct } from '../store.js';
-// import addToCartDOM from './addToCartDOM.js';
-// // set items
 
 export const addToCart = (addItem) => {
   const cartItems = getStorageItem();
@@ -29,14 +25,10 @@ export const addToCart = (addItem) => {
   } else {
     newCartItems = [...cartItems];
   }
-  // console.log(addItem);
-  // console.log(newCartItems);
-  // updateCartCount(newCartItems)
-  // updateCartTotal(newCartItems)
+  //
   setStorageItem(newCartItems);
   setupCart(newCartItems);
 
-  // localStorage.setItem('cartItems', JSON.stringify(newCartItems))
 };
 
 export const clearItemFromCart = (id) => {
