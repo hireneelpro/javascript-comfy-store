@@ -456,7 +456,6 @@ h4 {
 
 /* ========= product-center============= */
 .products-center {
-  max-width: 95%;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -472,8 +471,8 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.product {
-  max-width: 1170px;
+.products {
+  max-width: 1400px;
   margin: 0 auto;
   border-radius: var(--radius);
 }
@@ -512,6 +511,7 @@ h4 {
 .product-img {
   width: 100%;
   height: 18rem;
+  
   object-fit: cover;
   border-radius: var(--radius);
 }
